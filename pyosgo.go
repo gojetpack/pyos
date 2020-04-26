@@ -3,6 +3,7 @@ package pyos
 import "runtime"
 
 var Path path
+var File file
 
 // The name of the operating system dependent module imported.
 // The following names have currently been registered: 'posix', 'nt', 'java'.
