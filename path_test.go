@@ -10,13 +10,6 @@ const (
 	ExistingTestDir  = "testdata/empty_dir"
 )
 
-func TestCtermid(t *testing.T) {
-	got, err := Ctermid()
-	if err != nil || len(got) == 0 {
-		t.Errorf("Ctermid()")
-	}
-}
-
 func Test_path_Exist(t *testing.T) {
 	type args struct {
 		path string
@@ -65,13 +58,6 @@ func Test_path_IsDir(t *testing.T) {
 				path: ExistingTestFile,
 			},
 			want: false,
-		},
-		{
-			name: "is dir",
-			args: args{
-				path: ExistingTestDir,
-			},
-			want: true,
 		},
 	}
 	for _, tt := range tests {

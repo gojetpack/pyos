@@ -9,7 +9,6 @@ Current support:
 | Python  | Golang |
 | ------- |:------:|
 | os.name | pyos.Name |
-| os.ctermid | pyos.Ctermid |
 | os.path.exist() | pyos.Path.Exist() |
 | os.path.isfile() | pyos.Path.IsFile() |
 | os.path.isdir() | pyos.Path.IsDir() |

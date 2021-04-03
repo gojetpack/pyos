@@ -31,9 +31,3 @@ func Name() string {
 	}
 	return ""
 }
-
-// Return the filename corresponding to the controlling terminal of the process.
-// see: https://docs.python.org/3/library/os.html#os.ctermid
-func Ctermid() (string, error) {
-	return getTTYName()
-}
